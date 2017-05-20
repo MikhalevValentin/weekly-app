@@ -6,10 +6,13 @@
 			</div>
 			<nav class="sidebar-nav">
 				<li class="sidebar-item">
-					<router-link class="sidebar-link link-home" v-bind:to="'/'" :class="{'active': $route.fullPath ==='/' || $route.fullPath === '/second'}" exact></router-link>
+					<router-link class="sidebar-link link-home" v-bind:to="'/'" :class="{'active': $route.fullPath ==='/' || $route.fullPath === '/social'}" exact></router-link>
 				</li>
 				<li class="sidebar-item">
 					<router-link class="sidebar-link link-about" v-bind:to="'/about'"></router-link>
+				</li>
+				<li class="sidebar-item">
+					<router-link class="sidebar-link link-mailbox" v-bind:to="'/mailbox'"></router-link>
 				</li>
 			</nav>
 		</aside>

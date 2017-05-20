@@ -1,5 +1,5 @@
 <template>
-  <div class="about submenu-content">
+  <div class="home submenu-content">
 		<div class="submenu">
 			<div class="user-info-box">
 				<div class="user-photo"></div>
@@ -9,11 +9,12 @@
 				</div>
 			</div>
 			<nav class="submenu-list">
+				<h3 class="submenu-title">Dashboard</h3>
 				<li class="submenu-item">
-					<router-link class="submenu-link" v-bind:to="'/about/'">about1</router-link>
+					<router-link class="submenu-link" v-bind:to="'/'" exact>Checklist</router-link>
 				</li>
 				<li class="submenu-item">
-					<router-link class="submenu-link" v-bind:to="'/about/second'">about2</router-link>
+					<router-link class="submenu-link" v-bind:to="'/social'">Social</router-link>
 				</li>
 			</nav>
 		</div>
@@ -25,9 +26,10 @@
 
 <script>
 export default {
-  name: 'about'
+  name: 'home'
 }
 </script>
-<!-- styling for the component -->
-<style>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
 </style>

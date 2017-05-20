@@ -1,5 +1,5 @@
 <template>
-  <div class="hello submenu-content">
+  <div class="mail submenu-content">
 		<div class="submenu">
 			<div class="user-info-box">
 				<div class="user-photo"></div>
@@ -9,11 +9,12 @@
 				</div>
 			</div>
 			<nav class="submenu-list">
+				<h3 class="submenu-title">Inbox</h3>
 				<li class="submenu-item">
-					<router-link class="submenu-link" v-bind:to="'/'">home1</router-link>
+					<router-link class="submenu-link" v-bind:to="'/mailbox/'" exact>All message</router-link>
 				</li>
 				<li class="submenu-item">
-					<router-link class="submenu-link" v-bind:to="'/second'">home2</router-link>
+					<router-link class="submenu-link" v-bind:to="'/mailbox/sentmail'">Sent mail</router-link>
 				</li>
 			</nav>
 		</div>
@@ -25,7 +26,7 @@
 
 <script>
 export default {
-  name: 'hello'
+  name: 'mail'
 }
 </script>
 

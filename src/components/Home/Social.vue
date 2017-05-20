@@ -1,5 +1,5 @@
 <template>
-  <div class="hellosecond">
+  <div class="social">
     <h1>{{ msg }}</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dolore dicta consectetur possimus quia. Aut cumque, ipsam assumenda repudiandae delectus sint accusamus dolorum ab deserunt tempora animi earum nesciunt, debitis?</p>
   </div>
@@ -7,10 +7,10 @@
 
 <script>
 export default {
-  name: 'hellosecond',
+  name: 'social',
   data () {
     return {
-      msg: 'Home2'
+      msg: 'Social'
     }
   }
 }

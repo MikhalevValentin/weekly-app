@@ -6,24 +6,35 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-import Hello from './components/Hello'
-import About from './components/About'
-import HelloFirst from './components/HelloFirst'
-import HelloSecond from './components/HelloSecond'
-import AboutFirst from './components/AboutFirst'
-import AboutSecond from './components/AboutSecond'
+import Hello from './components/Home/Home'
+import Checklist from './components/Home/Checklist'
+import Social from './components/Home/Social'
+
+import About from './components/About/About'
+import AboutMe from './components/About/AboutMe'
+import Contact from './components/About/Contact'
+
+import Mail from './components/Mail/Mail'
+import AllMessage from './components/Mail/AllMessage'
+import SentMail from './components/Mail/SentMail'
 
 const routes = [
 	{ path: '/', component: Hello,
 	 	children: [
-			{ path: '', component: HelloFirst },
-			{ path: 'second', component: HelloSecond }
+			{ path: '', component: Checklist },
+			{ path: 'social', component: Social }
 		]
 	},
 	{ path: '/about', component: About,
 	 	children: [
-			{ path: '', component: AboutFirst },
-			{ path: 'second', component: AboutSecond }
+			{ path: '', component: AboutMe },
+			{ path: 'contact', component: Contact }
+		]
+	},
+	{ path: '/mailbox', component: Mail,
+	 	children: [
+			{ path: '', component: AllMessage },
+			{ path: 'sentmail', component: SentMail }
 		]
 	}
 ]

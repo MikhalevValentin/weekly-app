@@ -1,5 +1,5 @@
 # start-vue-template-app
-start template app for frontend ( vueJS, Scss )
+weekly app
 
 > A Vue.js project
 
