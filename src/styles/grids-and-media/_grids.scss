@@ -1,0 +1,9 @@
+@import '../variables-mixins-colors/_colors';
+@import '../variables-mixins-colors/_mixins';
+@import '../variables-mixins-colors/_variables';
+
+.app {
+	display: grid;
+	grid-template-columns: 1fr 13fr;
+	grid-template-rows: 100vh;
+}

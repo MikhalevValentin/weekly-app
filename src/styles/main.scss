@@ -1,0 +1,93 @@
+@import './variables-mixins-colors/_colors';
+@import './variables-mixins-colors/_mixins';
+@import './variables-mixins-colors/_variables';
+
+*::-webkit-input-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+*:-moz-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+*::-moz-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+*:-ms-input-placeholder {
+    color: #454546;
+    opacity: 1;
+}
+
+body {
+    font-family: $defaultFontFamily;
+    font-size: $defaultFontSize;
+		color: $defaultFontColor;
+		background-color: $defaultBgColor;
+    overflow-x: hidden;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.6;
+		margin: 0;
+		padding: 0;
+}
+
+/* Some typography rules */
+h1 {
+  font-size: 34px;
+  font-size: 2.125rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+h2 {
+  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 44px;
+  line-height: 2.75rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 22px;
+  line-height: 1.375rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 22px;
+  line-height: 1.375rem;
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+p {
+  margin-top: 22px;
+  margin-top: 1.375rem;
+  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
+}
+
+a {
+  color: $defaultFontColor;
+}
+
+@import './grids-and-media/_grids.scss';
+@import './components/_aside.scss';
+@import './grids-and-media/_media.scss';
